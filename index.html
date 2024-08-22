@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth B U's Personal Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.5s;
+        }
+        header:hover {
+            background-color: #45a049;
+        }
+        main {
+            padding: 5rem 1rem 1rem;
+            animation: slideIn 1.5s ease-out;
+        }
+        .section {
+            margin: 2rem 0;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-out;
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .contact {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        .social-icons {
+            margin-top: 1rem;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 1.5rem;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #45a049;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hemanth B U</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <h1>About Me</h1>
+            <p>Hello! I am Hemanth B U, a Computer Science student with knowledge in C++, HTML, CSS, JavaScript, and DSA. I am passionate about coding and building web pages.</p>
+        </div>
+        <div class="section">
+            <h1>Skills</h1>
+            <p>C++, HTML, CSS, JavaScript, DSA</p>
+        </div>
+        <div class="section contact">
+            <h1>Contact Me</h1>
+            <p>Email: <a href="mailto:hemanthbu2004@gmail.com">hemanthbu2004@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
